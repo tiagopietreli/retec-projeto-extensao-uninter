@@ -1,0 +1,155 @@
+.section.about {
+    width: 100%;
+    padding: 24px 0;
+    box-sizing: border-box;
+    background-color: #dfffe6;
+}
+
+
+/* CARDS DE PONTOS DE COLETA */
+
+.collection-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 30px 0;
+}
+
+.collection-card {
+    padding: 24px;
+    background: #C8E2CB;
+    border: 1px solid #b7d5bd;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(15, 63, 46, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(15, 63, 46, 0.10);
+}
+
+.collection-card h3 {
+    color: var(--green-700);
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.collection-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.collection-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--green-700);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.collection-link:hover {
+    text-decoration: underline;
+}
+
+/* MENSAGEM FINAL */
+
+.final-message {
+    width: 100%;
+    margin: 55px auto 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.final-message h2 {
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--green-900);
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+
+/* PERGUNTAS FREQUENTES */
+
+.faq-section {
+    margin: 50px auto;
+}
+
+.faq-section h2 {
+    color: var(--green-900);
+    margin-bottom: 12px;
+}
+
+.faq-intro {
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.faq-item {
+    background: #C8E2CB;
+    border: 1px solid #b7d5bd;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background: transparent;
+    color: var(--green-900);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question span {
+    font-size: 23px;
+    color: var(--green-700);
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 20px 18px;
+}
+
+.faq-answer p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    .collection-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .faq-question {
+        padding: 16px;
+        font-size: 14px;
+    }
+}

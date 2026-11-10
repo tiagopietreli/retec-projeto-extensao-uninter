@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ReTec — Descarte responsável de eletrônicos</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="brand">
+                <img class="logo" src="../assets/logo.png" alt="ReTec — logo" />
+                <div>
+                    <h1>ReTec</h1>
+                    <div style="font-size:13px;color:var(--muted)">
+                        Descarte responsável de eletrônicos
+                    </div>
+                </div>
+            </div>
+
+            <nav aria-label="Menu principal">
+                <a href="index.html" class="active">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container">
+
+                <div class="hero__content">
+
+                    <div class="hero-intro">
+
+                        <div class="hero-intro__text">
+
+                            <span class="kicker">Plataforma informativa</span>
+
+                            <h2 class="headline">
+                                Descarte sustentável de eletrônicos
+                            </h2>
+
+                            <p class="sub">
+                                Criado com fins educativos para alertar sobre o descarte correto de eletrônicos.
+                                Torne o descarte da sua comunidade cada vez mais responsável e consciente.
+                            </p>
+
+                        </div>
+
+                        <div class="hero-intro__image">
+                            <img src="../assets/index.png" alt="Ilustração sobre reciclagem de eletrônicos" />
+                        </div>
+
+                    </div>
+                    <div class="cards">
+
+                        <article class="card card--funciona">
+                            <div class="card-icon">
+                                <span>♻</span>
+                            </div>
+
+                            <span class="card-label">DESCARTE RESPONSÁVEL</span>
+
+                            <h3>Como funciona?</h3>
+
+                            <p>
+                                Entenda as etapas para coletar, armazenar e encaminhar
+                                equipamentos eletrônicos de maneira segura e consciente.
+                            </p>
+
+                            <a href="sobre.html" class="card-link">
+                                Saiba mais <span>→</span>
+                            </a>
+                        </article>
+
+                        <article class="card card--alerta">
+                            <div class="card-icon">
+                                <span>⌖</span>
+                            </div>
+
+                            <span class="card-label">PONTOS DE COLETA</span>
+
+                            <h3>Esteja alerta!</h3>
+
+                            <p>
+                                Conheça a importância dos pontos de coleta e descubra
+                                onde realizar o descarte correto dos seus eletrônicos.
+                            </p>
+
+
+                            <a href="contato.html" class="card-link">
+                                Encontrar pontos <span>→</span>
+                            </a>
+                        </article>
+
+                        <article class="card card--perguntas">
+                            <div class="card-icon">
+                                <span>?</span>
+                            </div>
+
+                            <span class="card-label">RESUMO</span>
+
+                            <h3>Perguntas Frequentes</h3>
+
+                            <p>
+                                Algumas dúvidas sobre como ocorre o descarte eletrônico e por qual motivo tudo é feito.
+                                Se encontram no
+                            </p>
+
+
+                            <a href="contato.html" class="card-link">
+                                Veja as questões <span>→</span>
+                            </a>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <small>
+                &copy; <span id="year"></span> ReTec — Desenvolvido por Tiago Pietreli
+            </small>
+        </div>
+    </footer>
+
+    <script>
+        function goTo(page) {
+            window.location.href = page;
+        }
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
